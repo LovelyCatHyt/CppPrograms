@@ -59,7 +59,7 @@ void Student::PrintInLine()
 	if (score_English < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << score_English;
 	WarpedTextAttr::WHITE.Apply();
-	float average = ((float)score_Chinese + score_Math + score_English) / 3.0;
+	float average = ((float)score_Chinese + (float)score_Math + (float)score_English) / 3.0;
 	if (average < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << average;
 	WarpedTextAttr::WHITE.Apply();
@@ -73,5 +73,34 @@ void Student::PrintTable(vector<Student> stuList)
 	WarpedTextAttr::WHITE.Apply();
 	vector<Student>::iterator i;
 	for (i = stuList.begin(); i != stuList.end(); i++) i->PrintInLine();
+	//平均成绩
+	int total_Chinese = 0;
+	int total_Math = 0;
+	int total_English = 0;
+	for (vector<Student>::iterator i = stuList.begin(); i != stuList.end(); i++)
+	{
+		total_Chinese += i->score_Chinese;
+		total_Math += i->score_Math;
+		total_English += i->score_English;
+	}
+	total_Chinese /= stuList.size();
+	total_Math /= stuList.size();
+	total_English /= stuList.size();
+	WarpedTextAttr::LIGHTGreen.Apply();
+	cout << "----------Average-----------------";
+	if (total_Chinese < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
+	cout << std::left << std::setw(8) << total_Chinese;
+	WarpedTextAttr::LIGHTGreen.Apply();
+	if (total_Math < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
+	cout << std::left << std::setw(8) << total_Math;
+	WarpedTextAttr::LIGHTGreen.Apply();
+	if (total_English < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
+	cout << std::left << std::setw(8) << total_English;
+	WarpedTextAttr::LIGHTGreen.Apply();
+	float average = ((float)total_Chinese + (float)total_Math + (float)total_English) / 3.0;
+	if (average < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
+	cout << std::left << std::setw(8) << average;
+	//收尾
+	cout << endl;
 	WarpedTextAttr::WHITE.Apply();
 }

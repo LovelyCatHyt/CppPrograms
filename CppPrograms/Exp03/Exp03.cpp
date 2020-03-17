@@ -21,7 +21,7 @@ int main()
 		cout << "Please enter the [" << i+1 << "] student's data." << endl;
 		stuList.emplace_back();
 		stuList[i].Input();
-		cout << "Continue to input?('y'for continue, the others for finish.)" << endl;
+		cout << "Continue to input?('y'for continue, the others for finish.)" << endl<<">";
 		char temp = 'y';
 		cin >> temp;
 		_continue = (temp == 'y') || (temp == 'Y');

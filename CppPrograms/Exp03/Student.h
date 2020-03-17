@@ -13,8 +13,8 @@ class Student
 	int score_Chinese;
 	int score_Math;
 	int score_English;
-public:
 	static const int cutoffScore = 60;
+public:
 	Student();
 	void Input();
 	void PrintInLine();
