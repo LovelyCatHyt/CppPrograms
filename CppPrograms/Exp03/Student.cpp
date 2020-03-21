@@ -59,7 +59,7 @@ void Student::PrintInLine()
 	if (score_English < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << score_English;
 	WarpedTextAttr::WHITE.Apply();
-	float average = ((float)score_Chinese + (float)score_Math + (float)score_English) / 3.0;
+	float average = ((float)score_Chinese + (float)score_Math + (float)score_English) / 3.0f;
 	if (average < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << average;
 	WarpedTextAttr::WHITE.Apply();
@@ -97,7 +97,7 @@ void Student::PrintTable(vector<Student> stuList)
 	if (total_English < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << total_English;
 	WarpedTextAttr::LIGHTGreen.Apply();
-	float average = ((float)total_Chinese + (float)total_Math + (float)total_English) / 3.0;
+	float average = ((float)total_Chinese + (float)total_Math + (float)total_English) / 3.0f;
 	if (average < cutoffScore) WarpedTextAttr::LIGHTRed.Apply();
 	cout << std::left << std::setw(8) << average;
 	//สีฮฒ
