@@ -11,6 +11,9 @@ using namespace ColorfulConsole::TextAttribute;
 
 int main()
 {
+	cout << WarpedTextAttr::LIGHTBLUE << "aaaa" << endl;
+	cout << WarpedTextAttr::WHITE<<"bbbb";
+	return 0;
 	cout << "Welcome to student score manage system!" << endl;
 	//开始输入
 	int i = 0;

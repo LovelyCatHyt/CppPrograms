@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exp03.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ColorfulConsole\TextAttribute.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -25,6 +22,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Exp04.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
