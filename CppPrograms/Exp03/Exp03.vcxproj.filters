@@ -27,12 +27,18 @@
     <ClCompile Include="Exp04.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="StudentList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColorfulConsole\TextAttribute.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ColorfulConsole\TextAttrSetter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentList.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Student.h">
