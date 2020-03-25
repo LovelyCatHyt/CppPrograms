@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,13 +155,15 @@
   <ItemGroup>
     <ClCompile Include="ColorfulConsole\TextAttribute.cpp" />
     <ClCompile Include="ColorfulConsole\TextAttrSetter.cpp" />
-    <ClCompile Include="Exp03.cpp" />
+    <ClCompile Include="Exp04.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="StudentList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColorfulConsole\TextAttribute.h" />
     <ClInclude Include="ColorfulConsole\TextAttrSetter.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
