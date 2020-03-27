@@ -30,6 +30,15 @@
     <ClCompile Include="StudentList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ColorfulConsole\Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorfulConsole\ForeColorProxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorfulConsole\GlobalEnvironment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColorfulConsole\TextAttribute.h">
@@ -42,6 +51,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorfulConsole\Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorfulConsole\ForeColorProxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorfulConsole\GlobalEnvironment.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

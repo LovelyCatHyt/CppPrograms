@@ -13,9 +13,10 @@ using WTA = ColorfulConsole::TextAttribute::WarpedTextAttr;
 
 int main()
 {
-	cout << WarpedTextAttr::LIGHTBLUE << "aaaa" << endl;
-	cout << WarpedTextAttr::WHITE<<"bbbb";
-	return 0;
+	/*
+	cout << WTA::LIGHTBLUE << "aaaa" << endl;
+	cout << WTA::WHITE<<"bbbb";
+	return 0;*/
 	cout << "Welcome to student score manage system!" << endl;
 	//开始输入
 	int i = 0;
