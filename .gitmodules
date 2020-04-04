@@ -1,0 +1,3 @@
+[submodule "CppPrograms/ColorfulConsole"]
+	path = CppPrograms/ColorfulConsole
+	url = https://github.com/LovelyCatHyt/ColorfulConsole.git

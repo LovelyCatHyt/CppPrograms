@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Student.h"
-#include "ColorfulConsole/TextAttribute.h"
+#include "../ColorfulConsole/TextAttribute.h"
 
 using std::cout;
 using std::cin;

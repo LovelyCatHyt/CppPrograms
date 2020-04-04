@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "StudentList.h"
 #include "Student.h"
-#include "ColorfulConsole/TextAttribute.h"
+#include "../ColorfulConsole/TextAttribute.h"
 
 using std::cout;
 using std::cin;
