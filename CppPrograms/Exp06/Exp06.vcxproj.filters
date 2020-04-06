@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\ColorfulConsole">
+      <UniqueIdentifier>{45b9fba7-f28f-4227-b97e-c1d9b5bdfccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ColorfulConsole">
+      <UniqueIdentifier>{99dd9c4f-6003-4a16-bb30-1505d940fe32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Exp06.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Teacher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJobPostGraduate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StududyingTeacher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ColorfulConsole\Color.cpp">
+      <Filter>源文件\ColorfulConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ColorfulConsole\ForeColorProxy.cpp">
+      <Filter>源文件\ColorfulConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ColorfulConsole\TextAttribute.cpp">
+      <Filter>源文件\ColorfulConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ColorfulConsole\TextAttrSetter.cpp">
+      <Filter>源文件\ColorfulConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ColorfulConsole\GlobalEnvironment.cpp">
+      <Filter>源文件\ColorfulConsole</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Person.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Teacher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OnJobPostGraduate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StududyingTeacher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ColorfulConsole\Color.h">
+      <Filter>头文件\ColorfulConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ColorfulConsole\ForeColorProxy.h">
+      <Filter>头文件\ColorfulConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ColorfulConsole\GlobalEnvironment.h">
+      <Filter>头文件\ColorfulConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ColorfulConsole\TextAttribute.h">
+      <Filter>头文件\ColorfulConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ColorfulConsole\TextAttrSetter.h">
+      <Filter>头文件\ColorfulConsole</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
