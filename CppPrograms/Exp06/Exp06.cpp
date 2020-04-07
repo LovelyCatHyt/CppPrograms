@@ -75,7 +75,7 @@ void Edit()
 {
     WTA darkGray(0);
     darkGray.fore_Intense = true;
-    cout << darkGray << "请选择要编辑的人员编号,从" << WTA::WHITE << '0' << darkGray << '到' << WTA::WHITE << (persons.size() - 1) << darkGray << '.';
+    cout << darkGray << "请选择要编辑的人员编号,从" << WTA::WHITE << '0' << darkGray << "到" << WTA::WHITE << (persons.size() - 1) << darkGray << '.';
     cout << WTA::WHITE << "\n>";
     int index = 0;
     cin >> index;
@@ -91,15 +91,21 @@ void Add()
 //主菜单:继续则返回true
 bool MainMenu()
 {
+    cout << "当前数据:\n";
     //遍历输出
     ForEach(persons, [](Person* each) {cout << *each << '\n'; });
     cout << "请选择使用的功能:\n"
         "[0]查询\n"
         "[1]修改\n"
         "[2]添加\n"
-        "其他输入为退出系统\n>";
+        "其他数字为退出系统\n>";
     int num = 0;
     cin >> num;
+    if (cin.bad() || cin.fail())
+    {
+        cin.clear(); cin.ignore();
+        return false;
+    }
     switch (num)
     {
     case 0: Search(); break;
@@ -126,7 +132,6 @@ int main()
         cin >> temp;
         continueInput = temp == 'y' || temp == 'Y';
     }
-    cout << "当前数据:\n";
     //循环菜单直至退出
     while (MainMenu());
     cout << WTA::LIGHTBLUE << "感谢使用本系统!" << WTA::WHITE;
