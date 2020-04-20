@@ -3,7 +3,7 @@
 #include "Student.h"
 
 //在职研究生
-class OnJobPostGraduate : public Teacher, public Student
+class OnJobPostGraduate : public Student
 {
 protected:
 	//工作单位

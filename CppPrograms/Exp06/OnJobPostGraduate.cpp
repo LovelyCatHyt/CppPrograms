@@ -9,7 +9,7 @@ using std::endl;
 using std::cin;
 using WTA = ColorfulConsole::TextAttribute::WarpedTextAttr;
 
-OnJobPostGraduate::OnJobPostGraduate():Teacher(),Student()
+OnJobPostGraduate::OnJobPostGraduate() : Student()
 {
 	workUnit = "[Empty]";
 }
@@ -31,7 +31,6 @@ void OnJobPostGraduate::PrintData() const
 	gray.fore_Intense = false;
 	cout << "类型:在职研究生" << gray << " 姓名:" << white << name << gray << " 年龄:" << white << age << gray << " 性别:" << white << gender
 		<< gray << " 学号:" << white << stuNumber << gray << " 班级:" << white << classNumber << " 专业:" << major << gray << " 入学成绩:" << white << entranceScore
-		<< gray << " 工号:" << white << GetJobNumber() << gray << " 职称:" << white << GetRank() << " 工资:" << white << GetSalary()
 		<< gray << " 工作单位:" << white << workUnit;
 }
 
@@ -46,10 +45,7 @@ void OnJobPostGraduate::Edit()
 		"[e]班级\n"
 		"[f]专业\n"
 		"[g]入学成绩\n"
-		"[h]工号\n"
-		"[i]职称\n"
-		"[j]工资\n"
-		"[k]工作单位\n>";
+		"[h]工作单位\n>";
 	cin >> flag;
 	SetData(std::tolower(flag));
 }
@@ -59,11 +55,7 @@ void OnJobPostGraduate::SetData(char flag)
 	if (flag < 'h')
 	{
 		Student::SetData(flag);
-	}else if(flag < 'k')
-	{
-		Teacher::SetData(flag - 4);
-	}
-	else if(flag == 'k')
+	}else if(flag == 'h')
 	{
 		cout << "请输入工作单位:\n>";
 		cin >> workUnit;
@@ -77,5 +69,5 @@ void OnJobPostGraduate::SetData(char flag)
 
 void OnJobPostGraduate::LoopSetData()
 {
-	for (int i = 0; i < 11; i++) SetData('a' + i);
+	for (int i = 0; i < 8; i++) SetData('a' + i);
 }
